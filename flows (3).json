@@ -1,0 +1,549 @@
+[
+    {
+        "id": "51f42df72b5b01e8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2d7369f06a32a73e",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "broker.mqttdashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fb6e584c46a6e524",
+        "type": "ui_tab",
+        "name": "Smart Plug Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1651a593c7b634a0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1a1dae4eb6e901fc",
+        "type": "ui_group",
+        "name": "Power Consumption",
+        "tab": "fb6e584c46a6e524",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "891e38ead38f034b",
+        "type": "ui_group",
+        "name": "Switch Control",
+        "tab": "fb6e584c46a6e524",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "01f4883a73d4845a",
+        "type": "ui_group",
+        "name": "Device Status",
+        "tab": "fb6e584c46a6e524",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7d249e6966d27fc",
+        "type": "mqtt out",
+        "z": "51f42df72b5b01e8",
+        "name": "Relay Switch ON",
+        "topic": "shock/relayon",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2d7369f06a32a73e",
+        "x": 1050,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "49ec93083d464c9f",
+        "type": "mqtt out",
+        "z": "51f42df72b5b01e8",
+        "name": "Relay Switch OFF",
+        "topic": "shock/relayoff",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2d7369f06a32a73e",
+        "x": 1050,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7ee5ac6b2ad6d83c",
+        "type": "mqtt out",
+        "z": "51f42df72b5b01e8",
+        "name": "Lock ON",
+        "topic": "shock/lockon",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2d7369f06a32a73e",
+        "x": 1020,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5c2a9ef206b20d60",
+        "type": "mqtt out",
+        "z": "51f42df72b5b01e8",
+        "name": "Lock OFF",
+        "topic": "shock/lockoff",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2d7369f06a32a73e",
+        "x": 1020,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8e3cd860a7f443c0",
+        "type": "mqtt in",
+        "z": "51f42df72b5b01e8",
+        "name": "PZEM Voltage",
+        "topic": "shock/voltage",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2d7369f06a32a73e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "8aa2cd3eb36283da"
+            ]
+        ]
+    },
+    {
+        "id": "f9d6ffebd4bb7d21",
+        "type": "mqtt in",
+        "z": "51f42df72b5b01e8",
+        "name": "PZEM Current",
+        "topic": "shock/current",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "2d7369f06a32a73e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 460,
+        "wires": [
+            [
+                "50307ae478a30b4b"
+            ]
+        ]
+    },
+    {
+        "id": "b508e2ee01e17b8d",
+        "type": "mqtt in",
+        "z": "51f42df72b5b01e8",
+        "name": "PZEM Power",
+        "topic": "shock/power",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "2d7369f06a32a73e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "e26247fd0d5aab03"
+            ]
+        ]
+    },
+    {
+        "id": "8aa2cd3eb36283da",
+        "type": "ui_text",
+        "z": "51f42df72b5b01e8",
+        "group": "1a1dae4eb6e901fc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Voltage",
+        "label": "Voltage : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 540,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "50307ae478a30b4b",
+        "type": "ui_text",
+        "z": "51f42df72b5b01e8",
+        "group": "1a1dae4eb6e901fc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Current",
+        "label": "Current :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 540,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e26247fd0d5aab03",
+        "type": "ui_text",
+        "z": "51f42df72b5b01e8",
+        "group": "1a1dae4eb6e901fc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Power",
+        "label": "Power :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 550,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a2f17785c3265a43",
+        "type": "ui_button",
+        "z": "51f42df72b5b01e8",
+        "name": "Turn ON Button",
+        "group": "891e38ead38f034b",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Turn On Plug",
+        "tooltip": "Turn ON Plug",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "49ec93083d464c9f"
+            ]
+        ]
+    },
+    {
+        "id": "f91d97abe253d130",
+        "type": "ui_button",
+        "z": "51f42df72b5b01e8",
+        "name": "Turn OFF Button",
+        "group": "891e38ead38f034b",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Turn Off Plug",
+        "tooltip": "Turn Off Plug",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 830,
+        "y": 320,
+        "wires": [
+            [
+                "b7d249e6966d27fc"
+            ]
+        ]
+    },
+    {
+        "id": "1972d98cd67c16b4",
+        "type": "ui_button",
+        "z": "51f42df72b5b01e8",
+        "name": "Turn Lock ON",
+        "group": "891e38ead38f034b",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Turn ON Lock",
+        "tooltip": "Turn ON Lock",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "7ee5ac6b2ad6d83c"
+            ]
+        ]
+    },
+    {
+        "id": "eccc5a68abe78843",
+        "type": "ui_button",
+        "z": "51f42df72b5b01e8",
+        "name": "Turn OFF Lock",
+        "group": "891e38ead38f034b",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Turn Off Lock",
+        "tooltip": "Turn Off Child Lock",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 440,
+        "wires": [
+            [
+                "5c2a9ef206b20d60"
+            ]
+        ]
+    },
+    {
+        "id": "e1b1ee24a0c19ecb",
+        "type": "ui_text",
+        "z": "51f42df72b5b01e8",
+        "group": "01f4883a73d4845a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Lock Status",
+        "label": "Lock Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f429a4d60746fea8",
+        "type": "mqtt in",
+        "z": "51f42df72b5b01e8",
+        "name": "Relay Status",
+        "topic": "shock/relaystatus",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "2d7369f06a32a73e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "f6085c18c6147491"
+            ]
+        ]
+    },
+    {
+        "id": "4c36121a21e28bd6",
+        "type": "mqtt in",
+        "z": "51f42df72b5b01e8",
+        "name": "Lock Status",
+        "topic": "shock/lockstatus",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2d7369f06a32a73e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 810,
+        "y": 520,
+        "wires": [
+            [
+                "e1b1ee24a0c19ecb"
+            ]
+        ]
+    },
+    {
+        "id": "f6085c18c6147491",
+        "type": "ui_text",
+        "z": "51f42df72b5b01e8",
+        "group": "01f4883a73d4845a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Device Status",
+        "label": "Device Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1060,
+        "y": 580,
+        "wires": []
+    }
+]
