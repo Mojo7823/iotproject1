@@ -11,7 +11,7 @@ Protecting plug from accidental shocking with sensing from PIR sensor, and monit
 - Bagus
 
 # Requirements
-- LOLIN D1 mini
+- LOLIN D1 mini 
 - PIR Sensor
 - PZEM 004-T
 
@@ -22,8 +22,11 @@ Software
 - MQTT Mosquitto
 
 Arduino Library
-- Protothread
-- PZEM Library https://github.com/mandulaj/PZEM-004T-v30
+- Protothread (https://gitlab.com/airbornemint/arduino-protothreads)
+- PZEM Library (https://github.com/mandulaj/PZEM-004T-v30)
+- EspMQTTClient (https://github.com/plapointe6/EspMQTTClient)
+- ESP8266 Basic Library, import it from board manager (https://arduino.esp8266.com/stable/package_esp8266com_index.json)
+
 
 # Wiring Diagram
 
