@@ -37,5 +37,6 @@ Arduino Library
 
 
 # Next Goal
-- Configuring how to raspicamera to stream via http5/js
-- Combine sensor reading data into chart
+- Adding wifi setting and login page
+- Integrating device power with the power plug
+- Reduce footprint of the smart plug size
