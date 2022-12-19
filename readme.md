@@ -1,14 +1,7 @@
 # Shockless
 The DIY Smart Plug
 
-
-#2 devices and 1 software for total inpatient care
-We will provide you with two devices, a camera and a smartwatch. Within these two devices and supported by universal software, your inpatient will be significantly safer.
-
-May update overtime
-
-# CFIoT-TechCare
-a Smart Solution for taking care
+ESP8266 IoT based smart plug using MQTT and Node-RED
 
 # Team Member
 - Hakim
