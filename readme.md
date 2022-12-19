@@ -2,10 +2,12 @@
 The DIY Smart Plug
 
 ESP8266 IoT based smart plug using MQTT and Node-RED
+Protecting plug from accidental shocking with sensing from PIR sensor, and monitoring power usage with PZEM 004-T
 
 # Team Member
 - Hakim
 - Leo
+- Fajar
 - Bagus
 
 # Requirements
@@ -14,10 +16,10 @@ ESP8266 IoT based smart plug using MQTT and Node-RED
 - PZEM 004-T
 
 Software
-- MariaDB
-- PHP 7
-
-- Apache Server
+- Arduino IDE
+- Node-JS
+- Node-RED
+- MQTT Mosquitto
 
 Arduino Library
 - Protothread
