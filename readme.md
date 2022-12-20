@@ -27,6 +27,9 @@ Arduino Library
 - EspMQTTClient (https://github.com/plapointe6/EspMQTTClient)
 - ESP8266 Basic Library, import it from board manager (https://arduino.esp8266.com/stable/package_esp8266com_index.json)
 
+Demonstration
+1. Child Lock : https://photos.app.goo.gl/yetZTeskmpnJDQRK6
+2. Web UI Test : https://photos.app.goo.gl/uKftXLBL7Zmyzr1g9
 
 # Wiring Diagram
 
