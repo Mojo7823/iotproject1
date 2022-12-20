@@ -31,6 +31,11 @@ Demonstration
 1. Child Lock : https://photos.app.goo.gl/yetZTeskmpnJDQRK6
 2. Web UI Test : https://photos.app.goo.gl/uKftXLBL7Zmyzr1g9
 
+
+# Node-RED User Interface
+![Node-Red Dashboard](https://user-images.githubusercontent.com/107752934/208565733-f364b671-417c-46db-8cbe-633b63e01769.png)
+
+
 # Wiring Diagram
 
 ![Relay and PIR Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443310-2d24a526-efe0-4c12-9a86-572453bcf70d.png)
