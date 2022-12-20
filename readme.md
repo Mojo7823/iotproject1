@@ -42,7 +42,7 @@ Demonstration
 # Wiring
 
 ## Pin Used
-| ---- | ---- | ----   |
+|     :---:      ||     :---:      ||     :---:      |
 | D1 Mini PIN | Pin | Description |
 | D2 | Relay IN | Relay Input   |
 | D4 | PIR Out | Pir Sensor Output   |
