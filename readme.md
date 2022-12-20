@@ -39,9 +39,10 @@ Demonstration
 ![Node-Red Dashboard](https://user-images.githubusercontent.com/107752934/208565733-f364b671-417c-46db-8cbe-633b63e01769.png)
 
 
-# Wiring Diagram
+# Wiring
 
 ## Pin Used
+| ---- | ---- | ----   |
 | D1 Mini PIN | Pin | Description |
 | D2 | Relay IN | Relay Input   |
 | D4 | PIR Out | Pir Sensor Output   |
@@ -50,7 +51,7 @@ Demonstration
 | D7 | PZEM TX | PZEM 004-T TX PIN   |
 | D8 | PZEM RX | PZEM 004-T RX PIN   |
 
-
+## Wiring Diagram
 ![Relay and PIR Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443310-2d24a526-efe0-4c12-9a86-572453bcf70d.png)
 ![PZEM Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443615-71dbae15-1b80-40bc-8f4d-3f62b595b41f.png)
 
