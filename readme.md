@@ -42,7 +42,7 @@ Demonstration
 # Wiring
 
 ## Pin Used
-|     :---:      ||     :---:      ||     :---:      |
+|     :---:      |     :---:      |     :---:      |
 | D1 Mini PIN | Pin | Description |
 | D2 | Relay IN | Relay Input   |
 | D4 | PIR Out | Pir Sensor Output   |
@@ -51,10 +51,6 @@ Demonstration
 | D7 | PZEM TX | PZEM 004-T TX PIN   |
 | D8 | PZEM RX | PZEM 004-T RX PIN   |
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
 
 ## Wiring Diagram
 ![Relay and PIR Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443310-2d24a526-efe0-4c12-9a86-572453bcf70d.png)
