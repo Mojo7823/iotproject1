@@ -4,6 +4,9 @@ The DIY Smart Plug
 ESP8266 IoT based smart plug using MQTT and Node-RED
 Protecting plug from accidental shocking with sensing from PIR sensor, and monitoring power usage with PZEM 004-T
 
+# Attention - LIVE WIRE, DANGEROUS!!
+This DiY project uses live wire as power source, It's very dangerous if you didn't know what are you doing, Please wear safety shoes and check proper grounding. 220/110 V are hurt (and deadly) enough to get shocked
+
 # Team Member
 - Hakim
 - Leo
