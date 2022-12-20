@@ -42,18 +42,15 @@ Demonstration
 # Wiring
 
 ## Pin Used
-|     :---:      |     :---:      |     :---:      |
+
 | D1 Mini PIN | Pin | Description |
+|     :---:      |     :---:      |     :---:      |
 | D2 | Relay IN | Relay Input   |
 | D4 | PIR Out | Pir Sensor Output   |
 | D5 | LED RED | (Optional) LED Lock Status   |
 | D6 | LED GREEN | (Optional) LED Lock Status   |
 | D7 | PZEM TX | PZEM 004-T TX PIN   |
 | D8 | PZEM RX | PZEM 004-T RX PIN   |
-
-| Command | Description |  Description |
-| --- | --- | --- |
-| git status | List all new or modified files | List all new or modified files |
 
 ## Wiring Diagram
 ![Relay and PIR Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443310-2d24a526-efe0-4c12-9a86-572453bcf70d.png)
