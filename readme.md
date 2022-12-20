@@ -51,9 +51,9 @@ Demonstration
 | D7 | PZEM TX | PZEM 004-T TX PIN   |
 | D8 | PZEM RX | PZEM 004-T RX PIN   |
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
+| Command | Description |  Description |
+| --- | --- | --- |
+| git status | List all new or modified files | List all new or modified files |
 
 ## Wiring Diagram
 ![Relay and PIR Wiring Diagram](https://user-images.githubusercontent.com/107752934/208443310-2d24a526-efe0-4c12-9a86-572453bcf70d.png)
