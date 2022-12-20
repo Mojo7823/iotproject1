@@ -27,6 +27,9 @@ Arduino Library
 - EspMQTTClient (https://github.com/plapointe6/EspMQTTClient)
 - ESP8266 Basic Library, import it from board manager (https://arduino.esp8266.com/stable/package_esp8266com_index.json)
 
+Node-Red Library
+- node-red dashboard (https://flows.nodered.org/node/node-red-dashboard)
+
 Demonstration
 1. Child Lock : https://photos.app.goo.gl/yetZTeskmpnJDQRK6
 2. Web UI Test : https://photos.app.goo.gl/uKftXLBL7Zmyzr1g9
@@ -46,8 +49,8 @@ Demonstration
 2. Install Node-red (https://nodered.org/docs/getting-started/local)
 3. Install MQTT Broker (https://mosquitto.org/)
 4. Import code from this source code for node-red
-5. and change arduino code according your MQTT broker adress
-
+5. Import arduino code into arduino
+6. and change arduino code according your MQTT broker adress and change your Wi-Fi Settings on arduino
 
 # Next Goal
 - Adding wifi setting and login page
